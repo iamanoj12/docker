@@ -1,0 +1,150 @@
+/* styles.css - simple, normal CSS for the Travel Agency site */
+
+/* Basic reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  color: #222;
+  background: #f4f7fb;
+}
+
+/* Layout container */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+/* Header */
+.site-header {
+  background: #ffffff;
+  border-bottom: 1px solid #e6e9ef;
+  padding: 16px 0;
+}
+
+.site-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-header h1 {
+  font-size: 20px;
+  color: #1f2937;
+}
+
+.site-header nav a {
+  color: #4b5563;
+  text-decoration: none;
+  margin-left: 16px;
+  font-size: 14px;
+}
+
+.site-header nav a:hover,
+.site-header nav a.active {
+  color: #111827;
+  font-weight: 600;
+}
+
+/* Hero section */
+.hero {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  padding: 36px 0;
+}
+
+.hero-left {
+  flex: 2;
+}
+
+.hero-left h2 {
+  font-size: 32px;
+  color: #0f172a;
+  margin-bottom: 12px;
+}
+
+.hero-left p {
+  color: #4b5563;
+  margin-bottom: 16px;
+}
+
+.btn {
+  display: inline-block;
+  background: #ff6b6b;
+  color: #ffffff;
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Right column cards */
+.hero-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #e6e9ef;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+/* Features */
+.features {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.feature {
+  flex: 1;
+  background: #ffffff;
+  border: 1px solid #e6e9ef;
+  padding: 16px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* About page main */
+.about {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #e6e9ef;
+}
+
+/* Footer */
+.site-footer {
+  margin-top: 28px;
+  padding: 14px 0;
+  text-align: center;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+  .hero {
+    flex-direction: column;
+  }
+
+  .features {
+    flex-direction: column;
+  }
+
+  .site-header .container {
+    flex-direction: column;
+    gap: 8px;
+  }
+}

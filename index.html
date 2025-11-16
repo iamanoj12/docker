@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WanderWay Travel Agency</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>WanderWay Travel</h1>
+      <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container hero">
+    <section class="hero-left">
+      <h2>Find your next adventure</h2>
+      <p>Affordable packages, personalised itineraries, and 24/7 support — we make travel effortless.</p>
+      <a class="btn" href="about.html">Explore Packages</a>
+    </section>
+    <aside class="hero-right">
+      <div class="card">
+        <h3>Summer Special</h3>
+        <p>7 days in Bali — flights + hotels starting at $599.</p>
+      </div>
+      <div class="card">
+        <h3>City Break</h3>
+        <p>3 days in Barcelona with guided tours starting at $249.</p>
+      </div>
+    </aside>
+  </main>
+
+  <section class="container features">
+    <div class="feature">
+      <h4>Trusted Guides</h4>
+      <p>Local experts to show you hidden gems.</p>
+    </div>
+    <div class="feature">
+      <h4>Flexible Plans</h4>
+      <p>Change dates with minimal fees.</p>
+    </div>
+    <div class="feature">
+      <h4>Secure Payment</h4>
+      <p>Multiple payment options and secure checkout.</p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> WanderWay Travel — All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

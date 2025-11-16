@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — WanderWay Travel</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>WanderWay Travel</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container about">
+    <h2>About Us</h2>
+    <p>WanderWay is a small travel agency focused on curated experiences — from beach escapes to cultural city tours. We combine local knowledge with easy booking to give you memorable trips.</p>
+
+    <h3>Contact</h3>
+    <ul>
+      <li>Email: contact@wanderway.example</li>
+      <li>Phone: +1 555 123 4567</li>
+      <li>Address: 100 Travel St., Adventure City</li>
+    </ul>
+
+    <h3>Why choose us?</h3>
+    <p>Personalized itineraries, expert local partners, and 24/7 customer support.</p>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> WanderWay Travel — All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
